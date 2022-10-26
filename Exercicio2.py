@@ -1,7 +1,5 @@
 print("Digite")
 
-a = str()
-
-a = input(a)
+a = input()
 
 print("O valor digitado é: " + str(a))

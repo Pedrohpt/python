@@ -1,5 +1,5 @@
 
-turno = input("“Digite a letra respectiva ao turno que você estuda. M-Matutino, V-Vespertino ou N-Noturno ")
+turno = input("Digite a letra respectiva ao turno que você estuda. M-Matutino, V-Vespertino ou N-Noturno:  ").upper()
 
 match turno:
     case "M":
@@ -9,4 +9,4 @@ match turno:
     case "N":
         print("Boa noite")
     case _:
-        print("ERRO")
+        print("Valor invalido")

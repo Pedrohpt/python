@@ -18,11 +18,6 @@ while reset == "S":
         print("ERRO")
 
     reset = input('''Deseja continuar utilizando a calculadora?
-Digite S para sim ou N para não. ''')
+Digite S para sim ou N para não. ''').upper()
 
-    if reset == "s":
-        reset = "S"
-    elif reset == "S":
-        reset == "S"
-    else:
-        print("Ate mais")
+print("Ate mais")

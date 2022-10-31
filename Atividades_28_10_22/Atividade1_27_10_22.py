@@ -1,4 +1,3 @@
-
 # Crie um programa para calcular as notas obtidas pelo aluno do
 # ensino médio, deverá mostrar mensagem para ser digitado a
 # nota do 1º, 2º, 3º e 4º bimestre. Após deverá mostrar na tela se o aluno foi aprovado, se está em recuperação ou foi reprovado
@@ -15,11 +14,11 @@ nota4 = float(input("Digite a sua nota no quarto bimestre: "))
 
 total = nota1 + nota2 + nota3 + nota4
 
-if  total > 60 and total <= 100:
-    print("Sua nota total é:", total, "Você Passou")
+if  total >= 60 and total <= 100:
+    print("Nota total:", total, "Aluno Aprovado")
 elif total >= 40 and total < 60:
-    print("Sua nota total é:", total, "Você esta de Recuperação")
+    print("Nota total:", total, "Aluno em Recuperação")
 elif total < 40 and total >= 0:
-    print("Sua nota total é:", total, "Você Reprovou")
+    print("Nota total:", total, "Aluno Reprovado")
 else:
     print("Nota não aceita")

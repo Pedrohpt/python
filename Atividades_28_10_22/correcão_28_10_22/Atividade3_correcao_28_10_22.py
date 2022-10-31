@@ -3,22 +3,22 @@
 # • Após a digitação dos números, o usuário deve digitar um número aleatório e verificar se ele se encontra na matriz.
 # • Ao final, os índices da linha e da coluna devem ser impressos se o elemento for encontrado; caso contrário, a mensagem “elemento não encontrado” deve ser mostrada na tela.
 
-m = [[0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4]]
-
-msg = False
+lista = [[0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4]]
 
 for i in range(5):
     for j in range(5):
-        m[i][j] = int(input("Preencha a matriz com um numero inteiro: "))
+        lista[i][j] = int(input("Digire um numero inteiro: "))
 
-num = int(input("Digite um numero interiro para localizar na matriz: "))
+n1 = int(input("Digite um numero interiro para localizar na matriz: "))
+encontrado = False
 
 for i in range(5):
     for j in range(5):
-        if m[i][j] == num:
-            print("Numero", num, "encontrado na posição", i, j)
-            msg = True
+        if lista[i][j] == n1 :
+            print("Número encontrado", n1, "na posição", i, j)
+            encontrado = True
 
+if encontrado is False:
+    print("Não foi encontrado na busca seu numero")
 
-if msg is False:
-    print("Numero", num, "não encontrado")
+print(lista)

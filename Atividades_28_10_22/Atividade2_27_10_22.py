@@ -22,11 +22,11 @@ print("Sua nota no segundo bimestre:", (pro1 + pro2)/2)
 print("Sua nota no terceiro bimestre:", (pro1 + pro2)/2)
 print("Sua nota no quarto bimestre:", (pro1 + pro2)/2)
 
-if  total > 60 and total <= 100:
-    print("Sua nota total é:", total, "Você Passou")
+if  total >= 60 and total <= 100:
+    print("Nota total:", total, "Aluno Aprovado")
 elif total >= 40 and total < 60:
-    print("Sua nota total é:", total, "Você esta de Recuperação")
+    print("Nota total:", total, "Aluno em Recuperação")
 elif total < 40 and total >= 0:
-    print("Sua nota total é:", total, "Você Reprovou")
+    print("Nota total:", total, "Aluno Reprovado")
 else:
     print("Nota não aceita")

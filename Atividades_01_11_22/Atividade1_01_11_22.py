@@ -8,9 +8,8 @@
 # • Salário Liquido : R$
 # Obs.: Salário Bruto - Descontos = Salário Líquido.
 
-
-salario = int(input("Digite quanto você ganha por hora: "))
-horas =  int(input("Digite o numero de horas trabalhadas no mês: "))
+salario = float(input("Digite quanto você ganha por hora: "))
+horas =  float(input("Digite o numero de horas trabalhadas no mês: "))
 
 bruto = salario * horas
 ir = (bruto - (bruto * (11/100)))

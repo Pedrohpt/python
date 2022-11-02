@@ -12,7 +12,6 @@ def fibonacci(n):
     else:
         return fibonacci(n - 1) + fibonacci(n - 2)
 
-
 n = 12
 
 print("“Ao final de um ano" ,fibonacci(n), "casais de coelhos estaram no patio")

@@ -4,7 +4,6 @@
 # do nome na lista que será afixada no quadro de avisos da escola.
 
 nome = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-x = 0
 
 def quicksort(lst):
     if not lst:

@@ -6,13 +6,9 @@
 # “n” para um ”numero” (range) informado pelo usuário.
 # • Use uma função que receba um valor n inteiro e imprima até a “n-Linha” informada pelo usuário.
 
-def repeticao(n):
-    for i in range(1,n+1):
-        for j in range(i):
-            print(i, end=" ")
-        print("")
+numero = int(input("Digite um numero inteiro para exibir for alinhado: "))
 
-
-n = int(input("Digite um numero inteiro: "))
-
-repeticao(n)
+for i in range(numero):
+    for j in range(i+1):
+        print(i+1, end=" ")
+    print("")

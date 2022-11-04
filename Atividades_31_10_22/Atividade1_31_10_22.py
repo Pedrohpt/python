@@ -11,7 +11,7 @@ for i in range(10):
 
 for i in range(10):
     if letra[i] != "A" and letra[i] != "E" and letra[i] != "I" and letra[i] != "O" and letra[i] != "U":
-        print(letra[i])
+        print(letra[i], end="")
         num = num + 1
-
+print("\r")
 print(num, "consoantes")

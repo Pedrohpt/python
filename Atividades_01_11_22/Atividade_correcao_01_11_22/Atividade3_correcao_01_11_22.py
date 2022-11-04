@@ -3,13 +3,16 @@
 # ao fim de um ano, quantos casais de coelhos estão no pátio?
 # Escreva um programa para calcular a quantidade de coelhos em um ano.
 
-
-def fibonacci(n):
-    if n > 0 and n < 3:
+def fibonacci(meses):
+    if meses > 0 and meses < 3:
         return 1
     else:
-        return fibonacci(n - 1) + fibonacci(n - 2)
+        return fibonacci(meses - 1) + fibonacci(meses - 2)
 
-n = 12
+meses = int(input("Digite o número de meses: "))
 
-print("“Ao final de um ano" ,fibonacci(n), "casais de coelhos estaram no patio")
+for i in range(meses):
+    casal = fibonacci(i+1)
+    print("O numero de casal no mes", i+1, "é", casal)
+
+
